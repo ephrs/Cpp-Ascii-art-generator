@@ -6,13 +6,12 @@ Basics
 ```
 #include "art.h"
 Art art;
-
+```
 To print one ascii character:
 ```
 std::cout << art.getAsciiChar('a') << std::endl;
 
 ```
-
 To print a ascii string:
 ```
 std::cout << art.getAsciiString("Hello") << std::endl;
