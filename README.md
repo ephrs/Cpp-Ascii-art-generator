@@ -17,7 +17,7 @@ To print a ascii string:
 std::cout << art.getAsciiString("Hello") << std::endl;
 
 ```
-Both methods return `std::string`.
-`getAsciiChar` takes a `char` as argument
+Both methods return `std::string`.  
+`getAsciiChar` takes a `char` as argument  
 `getAsciiString` takes a `std::string` as argument
 
