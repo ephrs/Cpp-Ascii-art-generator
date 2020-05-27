@@ -24,6 +24,8 @@ namespace AsciiArt
             return forwardslash;
         else if (character == ':')
             return colon;
+        else if (character == ';')
+            return semicolon;
         else if (character == '<')
             return smaller;
         else if (character == '=')
@@ -146,6 +148,26 @@ namespace AsciiArt
             return z;
         else if (character == '~')
             return tilde;
+        else if (character == '0')
+            return zero;
+        else if (character == '1')
+            return one;
+        else if (character == '2')
+            return two;
+        else if (character == '3')
+            return three;
+        else if (character == '4')
+            return four;
+        else if (character == '5')
+            return five;
+        else if (character == '6')
+            return six;
+        else if (character == '7')
+            return seven;
+        else if (character == '8')
+            return eight;
+        else if (character == '9')
+            return nine;
         else
             return space;
     }
@@ -159,7 +181,7 @@ namespace AsciiArt
         std::string line;
         while (std::getline(input, line))
         {
-            line.pop_back();//delete \n from the back off the ascii art
+            line.pop_back(); //delete \n from the back off the ascii art
             line.pop_back();
             firstChar.push_back(line);
         }
@@ -184,10 +206,9 @@ namespace AsciiArt
                     {
                         spaces.append(" ");
                     }
-                    std::reverse( finalAscii.begin(), finalAscii.end() );
+                    std::reverse(finalAscii.begin(), finalAscii.end());
                     finalAscii.push_back(spaces);
-                    std::reverse( finalAscii.begin(), finalAscii.end() );
-
+                    std::reverse(finalAscii.begin(), finalAscii.end());
                 }
                 while (addToFirst.size() < finalAscii.size())
                 {
@@ -197,9 +218,9 @@ namespace AsciiArt
                     {
                         spaces.append(" ");
                     }
-                    std::reverse( addToFirst.begin(), addToFirst.end() );
+                    std::reverse(addToFirst.begin(), addToFirst.end());
                     addToFirst.push_back(spaces);
-                    std::reverse( addToFirst.begin(), addToFirst.end() );
+                    std::reverse(addToFirst.begin(), addToFirst.end());
                 }
 
                 for (int char2length = 0; char2length < static_cast<int>(finalAscii.size()); char2length++)
