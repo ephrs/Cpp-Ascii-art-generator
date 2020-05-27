@@ -184,6 +184,7 @@ namespace AsciiArt
             " ::::::  \n"
             " ::::::  \n"
             "         \n"
+            "         \n"
             "         \n";
         std::string semicolon =
             "          \n"
@@ -199,6 +200,7 @@ namespace AsciiArt
             "  ;:::;;  \n"
             " ;:::;    \n"
             " ;;;;     \n"
+            "          \n"
             "          \n"
             "          \n";
         std::string smaller =
